@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/xsd/settings-1.0.0.xsd">
+    <localRepository/>
+    <profiles>
+        <profile>
+            <id>redhat-techpreview-all-repository</id>
+            <repositories>
+                <repository>
+                    <id>redhat-techpreview-all-repository</id>
+                    <name>Red Hat Tech Preview repository (all)</name>
+                    <url>http://maven.repository.redhat.com/techpreview/all/</url>
+                    <layout>default</layout>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                    <snapshots>
+                        <enabled>true</enabled>
+                    </snapshots>
+                </repository>
+            </repositories>
+            <pluginRepositories>
+                <pluginRepository>
+                    <id>redhat-techpreview-all-repository</id>
+                    <name>Red Hat Tech Preview repository (all)</name>
+                    <url>http://maven.repository.redhat.com/techpreview/all/</url>
+                    <layout>default</layout>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                    <snapshots>
+                        <enabled>true</enabled>
+                    </snapshots>
+                </pluginRepository>
+            </pluginRepositories>
+        </profile>
+        <profile>
+            <id>windup-default</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <repositories>
+                <repository>
+                    <id>oss-sontaype-public-repository-group</id>
+                    <name>JBoss Public Repository Group</name>
+                    <url>http://oss.sonatype.org/content/groups/public/</url>
+                </repository>
+                <repository>
+                    <id>oss-sonatype-snapshots-repository</id>
+                    <name>JBoss Snapshots Repository</name>
+                    <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+                </repository>
+                <repository>
+                    <id>jboss-public-repository-group</id>
+                    <name>JBoss Public Repository Group</name>
+                    <url>http://repository.jboss.org/nexus/content/groups/public/</url>
+                </repository>
+                <repository>
+                    <id>jboss-snapshots-repository</id>
+                    <name>JBoss Snapshots Repository</name>
+                    <url>https://repository.jboss.org/nexus/content/repositories/snapshots/</url>
+                </repository>
+            </repositories>
+            <pluginRepositories>
+                <pluginRepository>
+                    <id>oss-sonatype-public-repository-group-plugin</id>
+                    <name>JBoss Public Repository Group</name>
+                    <url>http://oss.sonatype.org/content/groups/public/</url>
+                </pluginRepository>
+                <pluginRepository>
+                    <id>oss-sonatype-snapshots-repository-plugin</id>
+                    <name>JBoss Snapshots Repository</name>
+                    <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+                </pluginRepository>
+                <pluginRepository>
+                    <id>jboss-public-repository-group-plugin</id>
+                    <name>JBoss Public Repository Group</name>
+                    <url>http://repository.jboss.org/nexus/content/groups/public/</url>
+                </pluginRepository>
+                <pluginRepository>
+                    <id>jboss-snapshots-repository-plugin</id>
+                    <name>JBoss Snapshots Repository</name>
+                    <url>https://repository.jboss.org/nexus/content/repositories/snapshots/</url>
+                </pluginRepository>
+            </pluginRepositories>
+        </profile>
+    </profiles>
+</settings>
